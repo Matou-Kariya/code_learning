@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
-@Fork
+@Fork   
 @BenchmarkMode(Mode.AverageTime)
 @Warmup(iterations = 3)
 @Measurement(iterations = 5)
