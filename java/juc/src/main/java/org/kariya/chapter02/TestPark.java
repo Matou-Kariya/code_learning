@@ -17,9 +17,9 @@ public class TestPark {
             log.info("park...");
             LockSupport.park();
             log.info("unpark...");
+//            System.out.println("打断状态:{}" + Thread.currentThread().isInterrupted());
             log.info("打断状态:{}", Thread.currentThread().isInterrupted());
-            log.info("interrupted的返回值:{}",Thread.interrupted());
-            log.info("再次打断状态:{}", Thread.currentThread().isInterrupted());
+            Thread.interrupted();
             // park线程被打断之后无法再park
             LockSupport.park();
             log.info("unpark...");
