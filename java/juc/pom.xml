@@ -40,6 +40,12 @@
             <version>1.33</version>
             <scope>provided</scope> <!-- 注意这里的scope设置为provided -->
         </dependency>
+
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.17</version>
+        </dependency>
     </dependencies>
 
     <build>
